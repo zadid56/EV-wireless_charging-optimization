@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="clemson.net.xml"/>
+        <route-files value="clemson.rou.xml"/>
+		<additional-files value="additionalFile.xml"/>	
+    </input>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+	
+	<!-- <traci_server> -->
+        <!-- <remote-port value="8813"/> -->
+    <!-- </traci_server> -->
+
+    <report>
+        <xml-validation value="never"/>	
+        <duration-log.statistics value="true"/>	
+    </report>
+
+    <output>
+        <summary-output value="summary.xml"/>
+		<queue-output value="queue.xml"/>
+        <tripinfo-output value="tripinfo.xml"/>
+        <battery-output value="battery.xml"/>
+        <battery-output.precision value="4"/>
+        <device.battery.probability value="1"/>	
+    </output>	
+	
+</configuration>

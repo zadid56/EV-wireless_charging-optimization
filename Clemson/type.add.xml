@@ -1,0 +1,17 @@
+<additional>
+    <vTypeDistribution id="myDist">
+        <vType id="car" maxSpeed="40" vClass="passenger" probability="0.9"/>
+        <vType id="ev" maxSpeed="40" vClass="passenger" probability="0.1" color="1,0,0">
+		    <param key="maximumBatteryCapacity" value="54"/>
+		    <param key="vehicleMass" value="1700"/>
+            <param key="frontSurfaceArea" value="0.8"/>
+            <param key="airDragCoefficient" value="0.3"/>
+            <param key="internalMomentOfInertia" value="0.01"/>
+            <param key="radialDragCoefficient" value="0.2"/>
+            <param key="rollDragCoefficient" value="0.01"/>
+            <param key="constantPowerIntake" value="0"/>
+            <param key="propulsionEfficiency" value="0.9"/>
+            <param key="recuperationEfficiency" value="0.9"/> 
+        </vType>
+    </vTypeDistribution>
+</additional>

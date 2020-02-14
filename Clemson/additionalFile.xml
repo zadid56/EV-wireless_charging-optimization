@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<additional>
+   <chargingStation chargeDelay="0" chargeInTransit="1" efficiency="0.85" endPos="77" id="cs_EV_01" lane="-12514813#24_0" power="7200" startPos="53"/>
+   <laneData file="lanedump.xml" id="lane_01"/>
+</additional>

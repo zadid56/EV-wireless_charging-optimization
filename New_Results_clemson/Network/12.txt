@@ -1,0 +1,240 @@
+*************************************************************
+
+   NEOS Server Version 5.0
+   Job#     : 5848601
+   Password : hYUcaMNb
+   User     : None
+   Solver   : milp:Gurobi:GAMS
+   Start    : 2018-03-02 17:04:41
+   End      : 2018-03-02 17:05:01
+   Host     : NEOS HTCondor Pool
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information  for any particular purpose.
+*************************************************************
+Executed on prod-exec-5.neos-server.org
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:04:58 Page 1
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+C o m p i l a t i o n
+
+
+
+
+COMPILATION TIME     =        0.001 SECONDS      2 MB  24.9.2 r64480 LEX-LEG
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:04:58 Page 2
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Analysis      SOLVE process Using MINLP From line 600
+
+
+****
+****  90 Integer +INF Bounds have been reset to 100 (see Option IntVarUp)
+****
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:04:58 Page 3
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Statistics    SOLVE process Using MINLP From line 600
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           2     SINGLE EQUATIONS            2
+BLOCKS OF VARIABLES          91     SINGLE VARIABLES           91
+NON ZERO ELEMENTS           181     NON LINEAR N-Z             90
+DERIVATIVE POOL              20     CONSTANT POOL             376
+CODE LENGTH               1,353     DISCRETE VARIABLES         90
+
+
+GENERATION TIME      =        0.002 SECONDS      3 MB  24.9.2 r64480 LEX-LEG
+
+
+EXECUTION TIME       =        0.003 SECONDS      3 MB  24.9.2 r64480 LEX-LEG
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:04:58 Page 4
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Solution Report     SOLVE process Using MINLP From line 600
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   process             OBJECTIVE  z
+     TYPE    MINLP               DIRECTION  MAXIMIZE
+     SOLVER  SBB                 FROM LINE  600
+
+**** SOLVER STATUS     1 Normal Completion         
+**** MODEL STATUS      8 Integer Solution          
+**** OBJECTIVE VALUE            24184.5425
+
+ RESOURCE USAGE, LIMIT          0.076      1000.000
+ ITERATION COUNT, LIMIT       274    2000000000
+ EVALUATION ERRORS              0             0
+CONOPT 3         24.9.2 r64480 Released Nov 14, 2017 LEG x86 64bit/Linux      
+ 
+ 
+    C O N O P T 3   version 3.17F
+    Copyright (C)   ARKI Consulting and Development A/S
+                    Bagsvaerdvej 246 A
+                    DK-2880 Bagsvaerd, Denmark
+ 
+ 
+    The model has 91 variables and 2 constraints
+    with 181 Jacobian elements, 90 of which are nonlinear.
+    The Hessian of the Lagrangian has 90 elements on the diagonal,
+    0 elements below the diagonal, and 90 nonlinear variables.
+ 
+ ** Warning **  The variance of the derivatives in the initial
+                point is large (= 4.9 ). A better initial
+                point, a better scaling, or better bounds on the
+                variables will probably help the optimization.
+ 
+ 
+                   Pre-triangular equations:   0
+                   Post-triangular equations:  1
+ 
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+ 
+ CONOPT time Total                            0.003 seconds
+   of which: Function evaluations             0.001 = 33.3%
+             1st Derivative evaluations       0.000 =  0.0%
+             2nd Derivative evaluations       0.000 =  0.0%
+             Directional 2nd Derivative       0.000 =  0.0%
+ 
+
+ ^^^ Detailed root node information above.
+
+ Solution satisfies optcr
+ Statistics:
+    B&B nodes     :                18
+    MIP solution  :      24184.542499 found in node 18
+    Best possible :      24740.067896
+    Absolute gap  :        555.525397     optca :  0.000000
+    Relative gap  :          0.022454     optcr :  0.100000
+    Model Status  :                 8
+    Solver Status :                 1
+
+                       LOWER     LEVEL     UPPER    MARGINAL
+
+---- EQU obj             .         .         .        1.000      
+---- EQU m1             -INF      6.000     6.000  3030.250      
+
+  obj  objective function
+  m1  Constraint 1
+
+                       LOWER     LEVEL     UPPER    MARGINAL
+
+---- VAR z              -INF  24184.542     +INF       .         
+---- VAR n2              .         .      100.000  -879.183      
+---- VAR n3              .         .      100.000 -1500.817      
+---- VAR n4              .        1.000   100.000   170.503      
+---- VAR n5              .        1.000   100.000   316.854      
+---- VAR n7              .        1.000   100.000  -134.735      
+---- VAR n8              .         .      100.000   585.656      
+---- VAR n9              .         .      100.000 -2745.925      
+---- VAR n10             .         .      100.000 -2276.583      
+---- VAR n11             .         .      100.000 -2742.525      
+---- VAR n12             .         .      100.000 -2228.700      
+---- VAR n13             .         .      100.000 -2982.367      
+---- VAR n15             .         .      100.000 -2670.133      
+---- VAR n16             .         .      100.000   187.142      
+---- VAR n17             .         .      100.000 -2803.583      
+---- VAR n18             .         .      100.000   850.850      
+---- VAR n19             .         .      100.000   310.250      
+---- VAR n20             .         .      100.000  -732.558      
+---- VAR n21             .         .      100.000 -1851.017      
+---- VAR n22             .         .      100.000 -2714.333      
+---- VAR n23             .         .      100.000 -2706.542      
+---- VAR n24             .         .      100.000 -1492.317      
+---- VAR n25             .         .      100.000  -923.242      
+---- VAR n27             .         .      100.000 -2250.658      
+---- VAR n28             .         .      100.000 -1907.400      
+---- VAR n29             .         .      100.000  -504.617      
+---- VAR n30             .         .      100.000 -2275.592      
+---- VAR n31             .         .      100.000 -2285.508      
+---- VAR n33             .         .      100.000 -1440.325      
+---- VAR n34             .         .      100.000 -2623.525      
+---- VAR n36             .         .      100.000   238.406      
+---- VAR n37             .         .      100.000 -2892.238      
+---- VAR n38             .         .      100.000  -774.832      
+---- VAR n41             .         .      100.000 -3008.858      
+---- VAR n42             .         .      100.000 -2618.425      
+---- VAR n43             .         .      100.000 -2786.300      
+---- VAR n44             .         .      100.000 -2324.325      
+---- VAR n45             .         .      100.000 -2827.242      
+---- VAR n46             .         .      100.000 -1235.758      
+---- VAR n47             .         .      100.000 -2616.158      
+---- VAR n48             .         .      100.000 -1205.867      
+---- VAR n49             .         .      100.000 -2373.342      
+---- VAR n50             .         .      100.000 -1212.485      
+---- VAR n51             .         .      100.000 -2566.297      
+---- VAR n52             .         .      100.000 -2701.099      
+---- VAR n53             .         .      100.000 -2954.890      
+---- VAR n54             .         .      100.000 -1545.867      
+---- VAR n55             .         .      100.000 -2221.758      
+---- VAR n56             .         .      100.000 -1315.375      
+---- VAR n57             .         .      100.000   973.392      
+---- VAR n58             .         .      100.000 -1493.167      
+---- VAR n59             .         .      100.000 -1605.083      
+---- VAR n60             .         .      100.000   892.081      
+---- VAR n61             .         .      100.000  -808.347      
+---- VAR n62             .         .      100.000 -2695.358      
+---- VAR n63             .         .      100.000   691.761      
+---- VAR n64             .         .      100.000 -1103.836      
+---- VAR n65             .         .      100.000 -2837.085      
+---- VAR n66             .         .      100.000      EPS       
+---- VAR n67             .         .      100.000  -908.225      
+---- VAR n68             .         .      100.000 -2502.117      
+---- VAR n71             .         .      100.000 -1182.067      
+---- VAR n72             .         .      100.000   504.475      
+---- VAR n73             .        2.000   100.000  -149.717      
+---- VAR n74             .         .      100.000 -2014.783      
+---- VAR n75             .         .      100.000   318.183      
+---- VAR n76             .         .      100.000 -2295.850      
+---- VAR n77             .         .      100.000 -2517.983      
+---- VAR n78             .         .      100.000 -2930.375      
+---- VAR n79             .         .      100.000 -1778.058      
+---- VAR n80             .         .      100.000 -1415.108      
+---- VAR n81             .         .      100.000 -2765.900      
+---- VAR n82             .         .      100.000  -550.942      
+---- VAR n83             .         .      100.000  -554.483      
+---- VAR n84             .         .      100.000  -665.125      
+---- VAR n85             .         .      100.000 -1693.483      
+---- VAR n86             .         .      100.000  -227.517      
+---- VAR n87             .         .      100.000  -803.108      
+---- VAR n88             .         .      100.000  -116.450      
+---- VAR n89             .         .      100.000 -1543.458      
+---- VAR n90             .         .      100.000 -1794.350      
+---- VAR n91             .         .      100.000 -1823.533      
+---- VAR n92             .         .      100.000 -3005.883      
+---- VAR n93             .         .      100.000 -2889.292      
+---- VAR n94             .         .      100.000 -2719.858      
+---- VAR n95             .         .      100.000 -1701.700      
+---- VAR n96             .         .      100.000 -2390.200      
+---- VAR n97             .         .      100.000 -2997.667      
+---- VAR n98             .        1.000   100.000  -173.860      
+---- VAR n99             .         .      100.000   404.883      
+---- VAR n100            .         .      100.000 -1567.258      
+
+  z  objective
+
+
+**** REPORT SUMMARY :        0     NONOPT
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+                             0     ERRORS
+
+
+EXECUTION TIME       =        0.001 SECONDS      2 MB  24.9.2 r64480 LEX-LEG
+
+
+USER: Small MUD - 5 User License                     G170411/0001AS-LNX
+      University of Wisconsin-Madison, Computer Sciences Dept.   DC8499
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /var/lib/condor/execute/dir_735777/MODEL.gms
+Output     /var/lib/condor/execute/dir_735777/solve.out

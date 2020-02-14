@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 3/28/2019 12:23:36 PM by SUMO gui Version 0.28.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumo-gui.exeConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\mdzadik\Dropbox\My_Research\Smart_Cities\My_Work\Work01\Simulation\Clemson\clemson.net.xml"/>
+        <route-files value="C:\Users\mdzadik\Dropbox\My_Research\Smart_Cities\My_Work\Work01\Simulation\Clemson\clemson.rou.xml"/>
+        <additional-files value="C:\Users\mdzadik\Dropbox\My_Research\Smart_Cities\My_Work\Work01\Simulation\Clemson\additionalFile.xml"/>
+    </input>
+
+    <output>
+        <battery-output value="C:\Users\mdzadik\Dropbox\My_Research\Smart_Cities\My_Work\Work01\Simulation\Clemson\battery.xml"/>
+        <battery-output.precision value="4"/>
+        <queue-output value="C:\Users\mdzadik\Dropbox\My_Research\Smart_Cities\My_Work\Work01\Simulation\Clemson\queue.xml"/>
+        <summary-output value="C:\Users\mdzadik\Dropbox\My_Research\Smart_Cities\My_Work\Work01\Simulation\Clemson\summary.xml"/>
+        <tripinfo-output value="C:\Users\mdzadik\Dropbox\My_Research\Smart_Cities\My_Work\Work01\Simulation\Clemson\tripinfo.xml"/>
+    </output>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+        <duration-log.statistics value="true"/>
+    </report>
+
+    <battery>
+        <device.battery.probability value="1"/>
+    </battery>
+
+</configuration>
+-->
+
+<battery-export>
+</battery-export>

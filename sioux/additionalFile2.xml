@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<additional>
+   <chargingStation chargeDelay="0" chargeInTransit="1" efficiency="0.85" endPos="77.5" id="cs_EV_01" lane="-12514813#24_1" power="7200" startPos="53.5"/>
+   <laneData file="lanedump.xml" id="lane_01"/>
+   <inductionLoop id="IL01" lane="-12514813#24_1" pos="50" freq="3600" file="iloop01.xml" />
+   <inductionLoop id="IL02" lane="-12514813#24_0" pos="50" freq="3600" file="iloop02.xml" />
+   <inductionLoop id="IL03" lane="-189090040#25_0" pos="520" freq="3600" file="iloop03.xml" />
+   <inductionLoop id="IL04" lane="-189090040#25_1" pos="520" freq="3600" file="iloop04.xml" />
+   <inductionLoop id="IL05" lane="12514813#21_0" pos="90" freq="3600" file="iloop05.xml" />
+   <inductionLoop id="IL06" lane="12514813#21_1" pos="90" freq="3600" file="iloop06.xml" />
+   <inductionLoop id="IL07" lane="189090040#17_0" pos="100" freq="3600" file="iloop07.xml" />
+   <inductionLoop id="IL08" lane="189090040#17_1" pos="100" freq="3600" file="iloop08.xml" />
+</additional>

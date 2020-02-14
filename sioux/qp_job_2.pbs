@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -N qps_job_2
+#PBS -l select=1:phase=8c:ncpus=2:mem=32gb,walltime=48:00:00
+
+cd $PBS_O_WORKDIR
+module add matlab 
+cd /home/mdzadik/SUMO_cluster/sioux 
+matlab -nosplash -nodisplay -nodesktop -r 'quick_parse_2'

@@ -1,0 +1,20 @@
+1. netconvert --osm-files clemson.osm -o clemson.net.xml --geometry.remove t --roundabouts.guess t --ramps.guess t --junctions.join t --tls.guess-signals t --tls.discard-simple t --tls.join t --keep-edges.by-vclass passenger --remove-edges.isolated t --ignore-errors t --no-turnarounds t --no-turnarounds.tls t
+
+2. python randomTrips.py -n clemson.net.xml -o clemson.trips.xml -p 1 --trip-attributes="departLane=\"best\" departSpeed=\"max\" departPos=\"random\" "type=\"myDist\""" --additional-file type.add.xml --edge-permission passenger
+
+3. duarouter -n clemson.net.xml -t clemson.trips.xml -d type.add.xml -o clemson.rou.xml --ignore-errors t --remove-loops t --repair t --repair.from t --repair.to t 
+
+
+
+
+1. netconvert --osm-files siouxfalls.osm -o siouxfalls.net.xml --geometry.remove t --roundabouts.guess t --tls.guess-signals t --tls.discard-simple t --tls.join t --keep-edges.by-vclass passenger --remove-edges.isolated t --ignore-errors t --no-turnarounds t --no-turnarounds.tls t
+
+2. python randomTrips.py -n siouxfalls.net.xml -o siouxfalls.trips.xml -p 0.4 --trip-attributes="departLane=\"best\" departSpeed=\"max\" departPos=\"random\" "type=\"myDist\""" --additional-file type.add.xml --edge-permission passenger
+
+3. duarouter -n siouxfalls.net.xml -t siouxfalls.trips.xml -d type.add.xml -o siouxfalls.rou.xml --ignore-errors t --remove-loops t --repair t --repair.from t --repair.to t 
+
+netconvert --osm-files siouxfalls.osm -o siouxfalls.net.xml --geometry.remove t --roundabouts.guess t --tls.guess-signals t --keep-edges.by-vclass passenger --remove-edges.isolated t --ignore-errors t --no-turnarounds t --no-turnarounds.tls t
+
+netconvert --node-files=sioux.nod.xml --edge-files=sioux.edg.xml --output-file=sioux.net.xml --no-turnarounds t
+
+python duaIterate.py -n sioux.net.xml -F sioux.rou.xml -E --max-convergence-deviation 0.01 --convergence-iterations 5 -b 0 -e 4500

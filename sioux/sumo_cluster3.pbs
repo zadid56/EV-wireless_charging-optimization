@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -N sumo_cluster3
+#PBS -l select=120:phase=4:ncpus=4:mem=12gb,walltime=48:00:00
+
+cd $PBS_O_WORKDIR
+module add gnu-parallel
+
+time parallel --sshloginfile $PBS_NODEFILE -j4 'module add matlab; cd /home/mdzadik/SUMO_cluster/sioux; matlab -nosplash -nodisplay -nodesktop -r 'DL_calc'' < input_sioux.txt

@@ -1,0 +1,150 @@
+*************************************************************
+
+   NEOS Server Version 5.0
+   Job#     : 6320667
+   Password : SfqOukPd
+   User     : None
+   Solver   : minco:Couenne:GAMS
+   Start    : 2018-10-10 14:48:43
+   End      : 2018-10-10 14:48:49
+   Host     : NEOS HTCondor Pool
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information  for any particular purpose.
+*************************************************************
+Executed on prod-exec-1.neos-server.org
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 10/10/18 14:48:45 Page 1
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+C o m p i l a t i o n
+
+
+
+
+COMPILATION TIME     =        0.000 SECONDS      2 MB  25.1.1 r66732 LEX-LEG
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 10/10/18 14:48:45 Page 2
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Analysis      SOLVE process Using MINLP From line 82
+
+
+****
+****  2 Integer +INF Bounds have been reset to 100 (see Option IntVarUp)
+****
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 10/10/18 14:48:45 Page 3
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Statistics    SOLVE process Using MINLP From line 82
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           7     SINGLE EQUATIONS            7
+BLOCKS OF VARIABLES           4     SINGLE VARIABLES            4
+NON ZERO ELEMENTS            10     NON LINEAR N-Z              3
+DERIVATIVE POOL              20     CONSTANT POOL              25
+CODE LENGTH                  30     DISCRETE VARIABLES          2
+
+
+GENERATION TIME      =        0.001 SECONDS      3 MB  25.1.1 r66732 LEX-LEG
+
+
+EXECUTION TIME       =        0.001 SECONDS      3 MB  25.1.1 r66732 LEX-LEG
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 10/10/18 14:48:45 Page 4
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Solution Report     SOLVE process Using MINLP From line 82
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   process             OBJECTIVE  z
+     TYPE    MINLP               DIRECTION  MINIMIZE
+     SOLVER  COUENNE             FROM LINE  82
+
+**** SOLVER STATUS     1 Normal Completion         
+**** MODEL STATUS      1 Optimal                   
+**** OBJECTIVE VALUE               29.6785
+
+ RESOURCE USAGE, LIMIT          0.044      1000.000
+ ITERATION COUNT, LIMIT         7    2000000000
+ EVALUATION ERRORS              0             0
+
+COIN-OR Couenne  25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+NLP0012I 
+NLP0014I             1         OPT 29.673714        7 0.002
+NLP0014I             2         OPT 29.709995        5 0.002
+Coin0506I Presolve 25 (0) rows, 10 (0) columns and 70 (0) elements
+Clp0006I 0  Obj 29.713066 Primal inf 58.806152 (1) Dual inf 2.164652 (1)
+Clp0006I 10  Obj 15.567735
+Clp0000I Optimal - objective value 15.567735
+Clp0032I Optimal objective 15.56773477 - 10 iterations time 0.002
+Clp0000I Optimal - objective value 15.567735
+Clp0000I Optimal - objective value 15.567735
+Cbc0031I 3 added rows had average density of 2.3333333
+Cbc0013I At root node, 3 cuts changed objective from 15.567735 to 29.678452 in 
+                                                                       6 passes
+Cbc0014I Cut generator 0 (Couenne convexifier cuts) - 8 row cuts average 2.2 el
+                                               ements, 4 column cuts (4 active)
+Cbc0004I Integer solution of 29.678452 found after 7 iterations and 0 nodes (0.
+                                                                    03 seconds)
+Cbc0001I Search completed - best objective 29.67845184253535, took 7 iterations
+                                                     and 0 nodes (0.03 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+
+
+Best solution:    2.967845e+01   (0 nodes, 0.044 seconds)
+Best possible:    2.967845e+01
+Absolute gap:    -2.486900e-14   (absolute tolerance optca: 0)
+Relative gap:    -8.379479e-16   (relative tolerance optcr: 0.1)
+
+                       LOWER     LEVEL     UPPER
+
+---- EQU obj          142.945   142.945   142.945      
+---- EQU c1             1.000     1.000     +INF       
+---- EQU c2             -INF      1.000     3.000      
+---- EQU c3            20.000    40.000     +INF       
+---- EQU c4             -INF     40.000    50.000      
+---- EQU c5            20.000    20.000     +INF       
+---- EQU c6             -INF     20.000    50.000      
+
+  obj  objective function
+  c1  Constraint 1
+  c2  Constraint 2
+  c3  Constraint 3
+  c4  Constraint 4
+  c5  Constraint 5
+  c6  Constraint 6
+
+                       LOWER     LEVEL     UPPER
+
+---- VAR z              -INF     29.678     +INF       
+---- VAR g1              .       40.000   100.000      
+---- VAR g2              .       20.000   100.000      
+---- VAR gt              .        1.000     +INF       
+
+  z  objective
+  g1  max-green time 1
+  g2  max-green time 2
+  gt  gap-time
+
+
+**** REPORT SUMMARY :        0     NONOPT
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+                             0     ERRORS
+                             1  PROJECTED
+
+
+EXECUTION TIME       =        0.001 SECONDS      2 MB  25.1.1 r66732 LEX-LEG
+
+
+USER: NEOS server license                            G180814/0001AS-LNX
+      University of Wisconsin-Madison, Computer Sciences Dept.   DC8499
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /var/lib/condor/execute/dir_3506113/MODEL.gms
+Output     /var/lib/condor/execute/dir_3506113/solve.out

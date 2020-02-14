@@ -1,0 +1,8 @@
+#!/bin/bash
+#PBS -N sumo_cluster2
+#PBS -l select=100:phase=4:ncpus=5:mem=8gb,walltime=48:00:00
+
+cd $PBS_O_WORKDIR
+module add gnu-parallel
+
+time parallel --sshloginfile $PBS_NODEFILE -j5 'module add anaconda3/4.2.0; cd /home/mdzadik/SUMO_cluster/sioux; python run_sumo.py ' < input_sioux.txt

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 5/15/2018 4:34:08 PM by SUMO gui Version 0.28.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumo-gui.exeConfiguration.xsd">
+
+    <input>
+        <net-file value="C:\Users\mdzadik\Downloads\Clemson\clemson.net.xml"/>
+        <route-files value="C:\Users\mdzadik\Downloads\Clemson\clemson.rou.xml"/>
+        <additional-files value="C:\Users\mdzadik\Downloads\Clemson\additionalFile.xml"/>
+    </input>
+
+    <output>
+        <battery-output value="C:\Users\mdzadik\Downloads\Clemson\battery.xml"/>
+        <battery-output.precision value="4"/>
+        <queue-output value="C:\Users\mdzadik\Downloads\Clemson\queue.xml"/>
+        <summary-output value="C:\Users\mdzadik\Downloads\Clemson\summary.xml"/>
+        <tripinfo-output value="C:\Users\mdzadik\Downloads\Clemson\tripinfo.xml"/>
+    </output>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+    </processing>
+
+    <report>
+        <verbose value="true"/>
+        <xml-validation value="never"/>
+        <duration-log.statistics value="true"/>
+    </report>
+
+    <battery>
+        <device.battery.probability value="1"/>
+    </battery>
+
+</configuration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="3600.00" id="IL06" nVehContrib="31" flow="31.00" occupancy="0.53" speed="11.43" length="5.00" nVehEntered="32"/>
+    <interval begin="3600.00" end="7200.00" id="IL06" nVehContrib="3" flow="3.00" occupancy="0.04" speed="14.67" length="5.00" nVehEntered="3"/>
+    <interval begin="7200.00" end="8668.00" id="IL06" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+</detector>

@@ -1,0 +1,350 @@
+*************************************************************
+
+   NEOS Server Version 5.0
+   Job#     : 6447437
+   Password : dGKRAOQF
+   User     : None
+   Solver   : minco:DICOPT:GAMS
+   Start    : 2018-12-16 23:27:30
+   End      : 2018-12-16 23:27:45
+   Host     : NEOS HTCondor Pool
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information  for any particular purpose.
+*************************************************************
+Executed on prod-exec-5.neos-server.org
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 12/16/18 23:27:32 Page 1
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+C o m p i l a t i o n
+
+
+
+
+COMPILATION TIME     =        0.002 SECONDS      2 MB  25.1.1 r66732 LEX-LEG
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 12/16/18 23:27:32 Page 2
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Analysis      SOLVE process Using MINLP From line 516
+
+
+****
+****  76 Integer +INF Bounds have been reset to 100 (see Option IntVarUp)
+****
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 12/16/18 23:27:32 Page 3
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Statistics    SOLVE process Using MINLP From line 516
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           2     SINGLE EQUATIONS            2
+BLOCKS OF VARIABLES          77     SINGLE VARIABLES           77
+NON ZERO ELEMENTS           153     NON LINEAR N-Z             76
+DERIVATIVE POOL              20     CONSTANT POOL             281
+CODE LENGTH               1,123     DISCRETE VARIABLES         76
+
+
+GENERATION TIME      =        0.003 SECONDS      3 MB  25.1.1 r66732 LEX-LEG
+
+
+EXECUTION TIME       =        0.003 SECONDS      3 MB  25.1.1 r66732 LEX-LEG
+GAMS 25.1.1  r66732 Released May 19, 2018 LEX-LEG x86 64bit/Linux 12/16/18 23:27:32 Page 4
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Solution Report     SOLVE process Using MINLP From line 516
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   process             OBJECTIVE  z
+     TYPE    MINLP               DIRECTION  MAXIMIZE
+     SOLVER  DICOPT              FROM LINE  516
+
+**** SOLVER STATUS     1 Normal Completion         
+**** MODEL STATUS      8 Integer Solution          
+**** OBJECTIVE VALUE            63364.1000
+
+ RESOURCE USAGE, LIMIT         11.673      1000.000
+ ITERATION COUNT, LIMIT     77623    2000000000
+ EVALUATION ERRORS              0             0
+-------------------------------------------------------------------------------
+Dicopt 2         25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+-------------------------------------------------------------------------------
+by Aldo Vecchietti, Director del Instituto INGAR,
+   CONICET, UTN, Santa Fe, Argentina
+by Ignacio E. Grossmann, Chemical Engineering Faculty,
+   Carnegie Mellon University, Pittsburgh, PA, USA
+-------------------------------------------------------------------------------
+CONOPT 3         25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+ 
+ 
+    C O N O P T 3   version 3.17I
+    Copyright (C)   ARKI Consulting and Development A/S
+                    Bagsvaerdvej 246 A
+                    DK-2880 Bagsvaerd, Denmark
+ 
+ 
+    The model has 77 variables and 2 constraints
+    with 153 Jacobian elements, 76 of which are nonlinear.
+    The Hessian of the Lagrangian has 76 elements on the diagonal,
+    0 elements below the diagonal, and 76 nonlinear variables.
+ 
+ ** Warning **  The variance of the derivatives in the initial
+                point is large (= 6.2 ). A better initial
+                point, a better scaling, or better bounds on the
+                variables will probably help the optimization.
+ 
+ 
+                   Pre-triangular equations:   0
+                   Post-triangular equations:  1
+ 
+ 
+ ** Optimal solution. Reduced gradient less than tolerance.
+ 
+ 
+ CONOPT time Total                            0.004 seconds
+   of which: Function evaluations             0.000 =  0.0%
+             1st Derivative evaluations       0.001 = 25.0%
+             2nd Derivative evaluations       0.000 =  0.0%
+             Directional 2nd Derivative       0.000 =  0.0%
+ 
+
+FICO-Xpress      25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+
+Xpress Optimizer 32.01
+Xpress Solver 64bit v8.4.7 Apr  4 2018
+fixing discrete vars and re-solving as an LP.
+fixed LP solved successfully, objective = 72598.6285318.
+Integer solution proven optimal.
+MIP solution  :      72598.628532
+Best possible :      72598.628532
+Absolute gap  :          0.000000     optca :          0.000000
+Relative gap  :          0.000000     optcr :          0.000000
+
+--- DICOPT: Setting up next NLP
+CONOPT 3         25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+ 
+ 
+    C O N O P T 3   version 3.17I
+    Copyright (C)   ARKI Consulting and Development A/S
+                    Bagsvaerdvej 246 A
+                    DK-2880 Bagsvaerd, Denmark
+ 
+ 
+ ** Warning **  The variance of the derivatives in the initial
+                point is large (= 6.2 ). A better initial
+                point, a better scaling, or better bounds on the
+                variables will probably help the optimization.
+ 
+ 
+                   Pre-triangular equations:   2
+                   Post-triangular equations:  0
+ 
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+ 
+ CONOPT time Total                            0.001 seconds
+   of which: Function evaluations             0.000 =  0.0%
+             1st Derivative evaluations       0.000 =  0.0%
+ 
+--- GMO Resort Time 0ms
+
+FICO-Xpress      25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+
+Xpress Optimizer 32.01
+Xpress Solver 64bit v8.4.7 Apr  4 2018
+fixing discrete vars and re-solving as an LP.
+fixed LP solved successfully, objective = 72598.6285316.
+Integer solution proven optimal.
+MIP solution  :      72598.628532
+Best possible :      72598.628532
+Absolute gap  :          0.000000     optca :          0.000000
+Relative gap  :          0.000000     optcr :          0.000000
+
+--- DICOPT: Setting up next NLP
+CONOPT 3         25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+ 
+ 
+    C O N O P T 3   version 3.17I
+    Copyright (C)   ARKI Consulting and Development A/S
+                    Bagsvaerdvej 246 A
+                    DK-2880 Bagsvaerd, Denmark
+ 
+ 
+ ** Warning **  The variance of the derivatives in the initial
+                point is large (= 6.2 ). A better initial
+                point, a better scaling, or better bounds on the
+                variables will probably help the optimization.
+ 
+ 
+                   Pre-triangular equations:   2
+                   Post-triangular equations:  0
+ 
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+ 
+ CONOPT time Total                            0.001 seconds
+   of which: Function evaluations             0.000 =  0.0%
+             1st Derivative evaluations       0.001 =100.0%
+ 
+--- GMO Resort Time 0ms
+
+FICO-Xpress      25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+
+Xpress Optimizer 32.01
+Xpress Solver 64bit v8.4.7 Apr  4 2018
+fixing discrete vars and re-solving as an LP.
+fixed LP solved successfully, objective = 72598.6285317.
+Integer solution proven optimal.
+MIP solution  :      72598.628532
+Best possible :      72598.628531
+Absolute gap  :         -0.000001     optca :          0.000000
+Relative gap  :         -0.000000     optcr :          0.000000
+
+--- DICOPT: Setting up next NLP
+CONOPT 3         25.1.1 r66732 Released May 19, 2018 LEG x86 64bit/Linux      
+ 
+ 
+    C O N O P T 3   version 3.17I
+    Copyright (C)   ARKI Consulting and Development A/S
+                    Bagsvaerdvej 246 A
+                    DK-2880 Bagsvaerd, Denmark
+ 
+ 
+ ** Warning **  The variance of the derivatives in the initial
+                point is large (= 6.2 ). A better initial
+                point, a better scaling, or better bounds on the
+                variables will probably help the optimization.
+ 
+ 
+                   Pre-triangular equations:   2
+                   Post-triangular equations:  0
+ 
+ 
+ ** Optimal solution. There are no superbasic variables.
+ 
+ 
+ CONOPT time Total                            0.001 seconds
+   of which: Function evaluations             0.000 =  0.0%
+             1st Derivative evaluations       0.000 =  0.0%
+ 
+--- DICOPT: Stopped on NLP worsening
+
+      The search was stopped because the objective function
+      of the NLP subproblems started to deteriorate.
+
+--- DICOPT: Best integer solution found: 63364.099981
+
+                       LOWER     LEVEL     UPPER    MARGINAL
+
+---- EQU obj             .         .         .        1.000      
+---- EQU m1             -INF      6.000     6.000      .         
+
+  obj  objective function
+  m1  Constraint 1
+
+                       LOWER     LEVEL     UPPER    MARGINAL
+
+---- VAR z              -INF  63364.100     +INF       .         
+---- VAR n1              .         .      100.000  4190.358      
+---- VAR n2              .         .      100.000  3270.233      
+---- VAR n3              .         .      100.000  3154.067      
+---- VAR n4              .         .      100.000  9237.092      
+---- VAR n11             .         .      100.000  9534.875      
+---- VAR n12             .         .      100.000 10648.658      
+---- VAR n13             .         .      100.000  3557.533      
+---- VAR n14             .         .      100.000  2360.167      
+---- VAR n15             .         .      100.000 10518.892      
+---- VAR n16             .         .      100.000  9140.192      
+---- VAR n17             .         .      100.000  8076.842      
+---- VAR n18             .         .      100.000  3357.217      
+---- VAR n19             .         .      100.000  3280.858      
+---- VAR n20             .         .      100.000 10101.258      
+---- VAR n27             .         .      100.000  3985.792      
+---- VAR n28             .         .      100.000  7935.742      
+---- VAR n29             .         .      100.000 12175.967      
+---- VAR n30             .         .      100.000 11061.617      
+---- VAR n31             .         .      100.000 10334.017      
+---- VAR n32             .         .      100.000  7617.558      
+---- VAR n33             .         .      100.000  6806.942      
+---- VAR n34             .         .      100.000  9120.642      
+---- VAR n35             .         .      100.000 11200.875      
+---- VAR n36             .         .      100.000  9502.433      
+---- VAR n37             .         .      100.000 13379.142      
+---- VAR n38             .        6.000   100.000  6902.708      
+---- VAR n39             .         .      100.000  4688.317      
+---- VAR n40             .         .      100.000  4587.450      
+---- VAR n41             .         .      100.000  3349.142      
+---- VAR n42             .         .      100.000  1948.767      
+---- VAR n43             .         .      100.000  8087.183      
+---- VAR n44             .         .      100.000  2980.525      
+---- VAR n45             .         .      100.000  2669.283      
+---- VAR n46             .         .      100.000  8219.358      
+---- VAR n47             .         .      100.000  7321.192      
+---- VAR n48             .         .      100.000  7133.625      
+---- VAR n49             .         .      100.000  5736.933      
+---- VAR n50             .         .      100.000  6481.392      
+---- VAR n51             .         .      100.000 11033.708      
+---- VAR n52             .         .      100.000  7079.083      
+---- VAR n53             .         .      100.000  3269.525      
+---- VAR n54             .         .      100.000  6716.558      
+---- VAR n55             .         .      100.000  5265.042      
+---- VAR n56             .         .      100.000  6361.258      
+---- VAR n57             .         .      100.000  5408.975      
+---- VAR n58             .         .      100.000  6673.633      
+---- VAR n59             .         .      100.000  8508.783      
+---- VAR n60             .         .      100.000  7273.025      
+---- VAR n67             .         .      100.000 10136.817      
+---- VAR n68             .         .      100.000  7809.658      
+---- VAR n69             .         .      100.000  8549.583      
+---- VAR n70             .         .      100.000 11690.192      
+---- VAR n71             .         .      100.000  1910.092      
+---- VAR n72             .         .      100.000 10808.175      
+---- VAR n73             .         .      100.000  7356.042      
+---- VAR n74             .         .      100.000  7716.867      
+---- VAR n75             .         .      100.000  9029.692      
+---- VAR n76             .         .      100.000  9352.408      
+---- VAR n77             .         .      100.000  4695.825      
+---- VAR n78             .         .      100.000  7867.458      
+---- VAR n79             .         .      100.000  6547.267      
+---- VAR n80             .         .      100.000  5335.592      
+---- VAR n81             .         .      100.000 10848.692      
+---- VAR n82             .         .      100.000 10965.000      
+---- VAR n83             .         .      100.000  5205.258      
+---- VAR n84             .         .      100.000  3271.225      
+---- VAR n85             .         .      100.000  9270.100      
+---- VAR n86             .         .      100.000  7958.692      
+---- VAR n87             .         .      100.000  4551.892      
+---- VAR n88             .         .      100.000  3012.117      
+---- VAR n89             .         .      100.000  8557.375      
+---- VAR n90             .         .      100.000  4161.883      
+---- VAR n91             .         .      100.000 11004.100      
+---- VAR n92             .         .      100.000  9070.775      
+---- VAR n93             .         .      100.000   377.117      
+---- VAR n94             .         .      100.000  8415.708      
+
+  z  objective
+
+
+**** REPORT SUMMARY :        0     NONOPT
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+                             0     ERRORS
+
+
+EXECUTION TIME       =        0.002 SECONDS      2 MB  25.1.1 r66732 LEX-LEG
+
+
+USER: NEOS server license                            G181108/0001AS-LNX
+      University of Wisconsin-Madison, Computer Sciences Dept.   DC8499
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /var/lib/condor/execute/dir_2527637/MODEL.gms
+Output     /var/lib/condor/execute/dir_2527637/solve.out

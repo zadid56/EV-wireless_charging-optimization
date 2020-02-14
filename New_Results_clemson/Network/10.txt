@@ -1,0 +1,197 @@
+*************************************************************
+
+   NEOS Server Version 5.0
+   Job#     : 5848596
+   Password : orBjetKF
+   User     : None
+   Solver   : minco:scip:GAMS
+   Start    : 2018-03-02 17:02:56
+   End      : 2018-03-02 17:03:06
+   Host     : NEOS HTCondor Pool
+
+   Disclaimer:
+
+   This information is provided without any express or
+   implied warranty. In particular, there is no warranty
+   of any kind concerning the fitness of this
+   information  for any particular purpose.
+*************************************************************
+Executed on prod-exec-4.neos-server.org
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:02:59 Page 1
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+C o m p i l a t i o n
+
+
+
+
+COMPILATION TIME     =        0.002 SECONDS      2 MB  24.9.2 r64480 LEX-LEG
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:02:59 Page 2
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Analysis      SOLVE process Using MINLP From line 600
+
+
+****
+****  90 Integer +INF Bounds have been reset to 100 (see Option IntVarUp)
+****
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:02:59 Page 3
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Model Statistics    SOLVE process Using MINLP From line 600
+
+
+MODEL STATISTICS
+
+BLOCKS OF EQUATIONS           2     SINGLE EQUATIONS            2
+BLOCKS OF VARIABLES          91     SINGLE VARIABLES           91
+NON ZERO ELEMENTS           181     NON LINEAR N-Z             90
+DERIVATIVE POOL              20     CONSTANT POOL             376
+CODE LENGTH               1,353     DISCRETE VARIABLES         90
+
+
+GENERATION TIME      =        0.002 SECONDS      3 MB  24.9.2 r64480 LEX-LEG
+
+
+EXECUTION TIME       =        0.002 SECONDS      3 MB  24.9.2 r64480 LEX-LEG
+GAMS 24.9.2  r64480 Released Nov 14, 2017 LEX-LEG x86 64bit/Linux 03/02/18 17:02:59 Page 4
+Structural Optimization of Process Flowsheets (PROCSEL,SEQ=116)
+Solution Report     SOLVE process Using MINLP From line 600
+
+
+               S O L V E      S U M M A R Y
+
+     MODEL   process             OBJECTIVE  z
+     TYPE    MINLP               DIRECTION  MAXIMIZE
+     SOLVER  SCIP                FROM LINE  600
+
+**** SOLVER STATUS     1 Normal Completion         
+**** MODEL STATUS      8 Integer Solution          
+**** OBJECTIVE VALUE            23457.5035
+
+ RESOURCE USAGE, LIMIT          2.980      1000.000
+ ITERATION COUNT, LIMIT      7265    2000000000
+ EVALUATION ERRORS              0             0
+
+SCIP             24.9.2 r64480 Released Nov 14, 2017 LEG x86 64bit/Linux      
+
+                       LOWER     LEVEL     UPPER
+
+---- EQU obj             .         .         .         
+---- EQU m1             -INF      6.000     6.000      
+
+  obj  objective function
+  m1  Constraint 1
+
+                       LOWER     LEVEL     UPPER
+
+---- VAR z              -INF  23457.504     +INF       
+---- VAR n2              .         .      100.000      
+---- VAR n3              .         .      100.000      
+---- VAR n4              .        1.000   100.000      
+---- VAR n5              .        1.000   100.000      
+---- VAR n7              .        1.000   100.000      
+---- VAR n8              .         .      100.000      
+---- VAR n9              .         .      100.000      
+---- VAR n10             .         .      100.000      
+---- VAR n11             .         .      100.000      
+---- VAR n12             .         .      100.000      
+---- VAR n13             .         .      100.000      
+---- VAR n15             .         .      100.000      
+---- VAR n16             .         .      100.000      
+---- VAR n17             .         .      100.000      
+---- VAR n18             .         .      100.000      
+---- VAR n19             .         .      100.000      
+---- VAR n20             .         .      100.000      
+---- VAR n21             .         .      100.000      
+---- VAR n22             .         .      100.000      
+---- VAR n23             .         .      100.000      
+---- VAR n24             .         .      100.000      
+---- VAR n25             .         .      100.000      
+---- VAR n27             .         .      100.000      
+---- VAR n28             .         .      100.000      
+---- VAR n29             .         .      100.000      
+---- VAR n30             .         .      100.000      
+---- VAR n31             .         .      100.000      
+---- VAR n33             .         .      100.000      
+---- VAR n34             .         .      100.000      
+---- VAR n36             .         .      100.000      
+---- VAR n37             .         .      100.000      
+---- VAR n38             .         .      100.000      
+---- VAR n41             .         .      100.000      
+---- VAR n42             .         .      100.000      
+---- VAR n43             .         .      100.000      
+---- VAR n44             .         .      100.000      
+---- VAR n45             .         .      100.000      
+---- VAR n46             .         .      100.000      
+---- VAR n47             .         .      100.000      
+---- VAR n48             .         .      100.000      
+---- VAR n49             .         .      100.000      
+---- VAR n50             .         .      100.000      
+---- VAR n51             .         .      100.000      
+---- VAR n52             .         .      100.000      
+---- VAR n53             .         .      100.000      
+---- VAR n54             .         .      100.000      
+---- VAR n55             .         .      100.000      
+---- VAR n56             .         .      100.000      
+---- VAR n57             .         .      100.000      
+---- VAR n58             .         .      100.000      
+---- VAR n59             .         .      100.000      
+---- VAR n60             .        1.000   100.000      
+---- VAR n61             .         .      100.000      
+---- VAR n62             .         .      100.000      
+---- VAR n63             .         .      100.000      
+---- VAR n64             .         .      100.000      
+---- VAR n65             .         .      100.000      
+---- VAR n66             .         .      100.000      
+---- VAR n67             .         .      100.000      
+---- VAR n68             .         .      100.000      
+---- VAR n71             .         .      100.000      
+---- VAR n72             .         .      100.000      
+---- VAR n73             .        2.000   100.000      
+---- VAR n74             .         .      100.000      
+---- VAR n75             .         .      100.000      
+---- VAR n76             .         .      100.000      
+---- VAR n77             .         .      100.000      
+---- VAR n78             .         .      100.000      
+---- VAR n79             .         .      100.000      
+---- VAR n80             .         .      100.000      
+---- VAR n81             .         .      100.000      
+---- VAR n82             .         .      100.000      
+---- VAR n83             .         .      100.000      
+---- VAR n84             .         .      100.000      
+---- VAR n85             .         .      100.000      
+---- VAR n86             .         .      100.000      
+---- VAR n87             .         .      100.000      
+---- VAR n88             .         .      100.000      
+---- VAR n89             .         .      100.000      
+---- VAR n90             .         .      100.000      
+---- VAR n91             .         .      100.000      
+---- VAR n92             .         .      100.000      
+---- VAR n93             .         .      100.000      
+---- VAR n94             .         .      100.000      
+---- VAR n95             .         .      100.000      
+---- VAR n96             .         .      100.000      
+---- VAR n97             .         .      100.000      
+---- VAR n98             .         .      100.000      
+---- VAR n99             .         .      100.000      
+---- VAR n100            .         .      100.000      
+
+  z  objective
+
+
+**** REPORT SUMMARY :        0     NONOPT
+                             0 INFEASIBLE
+                             0  UNBOUNDED
+                             0     ERRORS
+
+
+EXECUTION TIME       =        0.001 SECONDS      2 MB  24.9.2 r64480 LEX-LEG
+
+
+USER: Small MUD - 5 User License                     G170411/0001AS-LNX
+      University of Wisconsin-Madison, Computer Sciences Dept.   DC8499
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      /var/lib/condor/execute/dir_708241/MODEL.gms
+Output     /var/lib/condor/execute/dir_708241/solve.out
